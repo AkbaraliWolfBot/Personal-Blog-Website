@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-*[Project Info](Project-Info)
-*[Required Skills and Technologies](Required-Skills-and-Technologies)
+[Project Info](Project-Info)
+[Required Skills and Technologies](Required-Skills-and-Technologies)
 
 ## Project Info
 
