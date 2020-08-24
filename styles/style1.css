@@ -1,0 +1,148 @@
+@import "../styles/style2.css";
+@import "../styles/style3.css";
+@import "../styles/style4.css";
+body {
+    background: #F5EDED
+}
+
+.main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 50px;
+    gap: 15px;
+    font-family: sans-serif;
+}
+
+.single-blog {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #fafafa;
+    min-height: 200px;
+}
+
+figure figcaption {
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.single-blog img {
+    width: 100%;
+    display: block;
+}
+
+.blog-meta {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.single-blog span {
+    text-transform: capitalize;
+    float: right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.blog-text {
+    margin: 5px;
+    padding: 5px;
+}
+
+.single-blog h2 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.navbar {
+    margin: 10px;
+    padding: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 1em 0;
+}
+
+.navbar li a {
+    color: #6D38FF;
+    font-weight: 400;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover {
+    opacity: 1;
+}
+
+.bottom {
+    background-color: #B8B8BA;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+@media (max-width: 500px) {
+    .main {
+        display: grid;
+        grid-template-areas: "hali""bali""mali""yali""cali";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+    .navbar {
+        grid-area: hali;
+    }
+    #card1 {
+        grid-area: bali;
+    }
+    #card2 {
+        grid-area: mali;
+    }
+    #card3 {
+        grid-area: yali;
+    }
+    .bottom {
+        grid-area: cali;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+    .main {
+        display: grid;
+        grid-template-areas: "hali bali""mali yali""cali cali";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 50px;
+        grid-gap: 10px;
+    }
+    .navbar {
+        grid-area: hali;
+    }
+    #card1 {
+        grid-area: bali;
+    }
+    #card2 {
+        grid-area: mali;
+    }
+    #card3 {
+        grid-area: yali;
+    }
+    .bottom {
+        grid-area: cali;
+    }
+}
