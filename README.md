@@ -8,7 +8,7 @@
 ## Project Info
 
 This ia a responsive mobile friendly blog post website.
-The project is only buld with programs HTML5 and CSS3 due to the requirements.
+The project only uses programs HTML5 and CSS3 due to the requirements.
 This is my first website that I created independently according to a request in the project proposal.
 
 ## Required Skills and Technologies
